@@ -1,3 +1,5 @@
+import { Address } from "components";
+
 export const OrderDetails: React.FC = () => {
     return (
         <fieldset className="row-span-2 flex flex-col justify-between rounded-md border-2 px-8 py-4">
@@ -10,14 +12,7 @@ export const OrderDetails: React.FC = () => {
             ></iframe>
             <label>
                 Address
-                <input
-                    type="text"
-                    name="address"
-                    minLength={3}
-                    maxLength={50}
-                    required
-                    className="w-full rounded-md border-2 px-4 py-2 outline-none"
-                />
+                <Address />
             </label>
             <label>
                 Email

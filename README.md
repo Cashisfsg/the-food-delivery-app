@@ -91,7 +91,8 @@ npm run dev
 2. Open the **`.env`** file in editor and add environment variables:
 
 ```
-REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY=your_sitekey
+REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY=your_site_key
+REACT_APP_GOOGLE_MAPS_API_KEY=your=your_google_maps_api_key
 ```
 
 3. Save the **`.env`** file.

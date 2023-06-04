@@ -15,6 +15,7 @@ export const SearchOrders: React.FC<SearchOrdersProps> = ({
                 <input
                     type="email"
                     name="email"
+                    autoFocus={true}
                     required
                     className="w-full rounded-md border-2 px-4 py-2 outline-none"
                 />

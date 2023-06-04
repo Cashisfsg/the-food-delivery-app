@@ -4,11 +4,10 @@ import { BsTrash } from "react-icons/bs";
 import { Good } from "store";
 
 interface CartItemProps {
-    key: number;
     cartItem: Good;
 }
 
-export const CartItem: React.FC<CartItemProps> = ({ key, cartItem }) => {
+export const CartItem: React.FC<CartItemProps> = ({ cartItem }) => {
     const dispatch = useAppDispatch();
 
     const onChangeAmount = (
@@ -25,10 +24,7 @@ export const CartItem: React.FC<CartItemProps> = ({ key, cartItem }) => {
     };
 
     return (
-        <article
-            key={key}
-            className="grid h-max grid-cols-[6fr_5fr_1fr] place-items-center gap-4 rounded-md border px-4 pb-8 pt-4 shadow-md"
-        >
+        <article className="grid h-max grid-cols-[6fr_5fr_1fr] place-items-center gap-4 rounded-md border px-4 pb-8 pt-4 shadow-md">
             <div className="rounded-md border shadow-md">
                 <img
                     src={cartItem?.url}

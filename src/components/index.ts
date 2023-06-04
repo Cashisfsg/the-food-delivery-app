@@ -1,3 +1,4 @@
+export * from "./Address";
 export * from "./CartItem";
 export * from "./GoodsCard";
 export * from "./Navbar";
