@@ -1,0 +1,577 @@
+{
+    "shops": [
+        {
+            "id": 1,
+            "name": "McDonald's"
+        },
+        {
+            "id": 2,
+            "name": "KFC"
+        },
+        {
+            "id": 3,
+            "name": "PizzaHut"
+        },
+        {
+            "id": 4,
+            "name": "Burger King"
+        },
+        {
+            "id": 5,
+            "name": "Starbucks"
+        }
+    ],
+    "goods": [
+        {
+            "id": 1,
+            "name": "hamburger",
+            "price": 105,
+            "url": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_Hamburger:product-header-desktop?wid=830&hei=456&dpr=off",
+            "shop_id": 1
+        },
+        {
+            "id": 2,
+            "name": "cheeseburger",
+            "price": 125,
+            "url": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_Cheeseburger:product-header-desktop?wid=830&hei=458&dpr=off",
+            "shop_id": 1
+        },
+        {
+            "id": 3,
+            "name": "big mac",
+            "price": 150,
+            "url": "https://s7d1.scene7.com/is/image/mcdonalds/BIG_MAC:product-header-desktop?wid=829&hei=455&dpr=off",
+            "shop_id": 1
+        },
+        {
+            "id": 4,
+            "name": "french fries medium",
+            "price": 120,
+            "url": "https://s7d1.scene7.com/is/image/mcdonalds/FFMedium:product-header-desktop?wid=830&hei=458&dpr=off",
+            "shop_id": 1
+        },
+        {
+            "id": 5,
+            "name": "chicken roll",
+            "price": 135,
+            "url": "https://s7d1.scene7.com/is/image/mcdonalds/chicken_roll:product-header-desktop?wid=829&hei=455&dpr=off",
+            "shop_id": 1
+        },
+        {
+            "id": 6,
+            "name": "i-twister cheese",
+            "price": 50,
+            "url": "https://www.kfc-ukraine.com/admin/files/medium/medium_4190.png",
+            "shop_id": 2
+        },
+        {
+            "id": 7,
+            "name": "kentucky burger",
+            "price": 105,
+            "url": "https://www.kfc-ukraine.com/admin/files/4185.png",
+            "shop_id": 2
+        },
+        {
+            "id": 8,
+            "name": "double chicken",
+            "price": 125,
+            "url": "https://www.kfc-ukraine.com/admin/files/4126.jpg",
+            "shop_id": 2
+        },
+        {
+            "id": 9,
+            "name": "hot bucket",
+            "price": 245,
+            "url": "https://www.kfc-ukraine.com/admin/files/3749.jpg",
+            "shop_id": 2
+        },
+        {
+            "id": 10,
+            "name": "bites barbecue",
+            "price": 105,
+            "url": "https://www.kfc-ukraine.com/admin/files/4131.jpg",
+            "shop_id": 2
+        },
+        {
+            "id": 11,
+            "name": "pizza \"supreme\"",
+            "price": 170,
+            "url": "https://www.pizzahata.com.ua/wp-content/uploads/2020/08/picca-suprim.jpeg",
+            "shop_id": 3
+        },
+        {
+            "id": 12,
+            "name": "pizza \"margarita\"",
+            "price": 190,
+            "url": "https://www.pizzahata.com.ua/wp-content/uploads/2020/08/pitsa-marharyta.jpeg",
+            "shop_id": 3
+        },
+        {
+            "id": 13,
+            "name": "pepperoni pizza",
+            "price": 130,
+            "url": "https://www.pizzahata.com.ua/wp-content/uploads/2020/08/pitsa-paperoni-600x600.jpeg",
+            "shop_id": 3
+        },
+        {
+            "id": 14,
+            "name": "pizza \"parma\"",
+            "price": 180,
+            "url": "https://www.pizzahata.com.ua/wp-content/uploads/2020/08/pitsa-parma.jpg",
+            "shop_id": 3
+        },
+        {
+            "id": 15,
+            "name": "pizza \"frutto de mare\"",
+            "price": 150,
+            "url": "https://www.pizzahata.com.ua/wp-content/uploads/2020/08/pitsa-frutto-die-marie.jpeg",
+            "shop_id": 3
+        },
+        {
+            "id": 16,
+            "name": "caesar burger",
+            "price": 395,
+            "url": "https://myastoriya.com.ua/upload/iblock/8ce/uarl0gdwphdffabptl20duj3jbsnv5v5.jpg",
+            "shop_id": 4
+        },
+        {
+            "id": 17,
+            "name": "vegetarian burger",
+            "price": 480,
+            "url": "https://myastoriya.com.ua/upload/iblock/9e2/e1ukopogp0l37e5sjykztcqszccvudgo.jpg",
+            "shop_id": 4
+        },
+        {
+            "id": 18,
+            "name": "burger cowboy",
+            "price": 450,
+            "url": "https://myastoriya.com.ua/upload/iblock/177/ju1nosal2yf8cnc8kcuuafa88r6wmro7.jpg",
+            "shop_id": 4
+        },
+        {
+            "id": 19,
+            "name": "burger dry aged",
+            "price": 395,
+            "url": "https://myastoriya.com.ua/upload/iblock/e03/f888fpllb0s9ckgn7xc0dkjlk5i04hon.jpg",
+            "shop_id": 4
+        },
+        {
+            "id": 20,
+            "name": "big beef burger",
+            "price": 450,
+            "url": "https://myastoriya.com.ua/upload/iblock/671/6711bcbc58337b5a66fafe7e0073314f.jpg",
+            "shop_id": 4
+        },
+        {
+            "id": 21,
+            "name": "caffe americano",
+            "price": 15,
+            "url": "https://cdn.shopify.com/s/files/1/0022/1393/7252/articles/20230113070552-caffe-americano-blog_1200x1200.webp?v=1673593629",
+            "shop_id": 5
+        },
+        {
+            "id": 22,
+            "name": "cappuccino",
+            "price": 25,
+            "url": "https://www.thespruceeats.com/thmb/oUxhx54zsjVWfPlrgedJU0MZ-y0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/how-to-make-cappuccinos-766116-hero-01-a754d567739b4ee0b209305138ecb996.jpg",
+            "shop_id": 5
+        },
+        {
+            "id": 23,
+            "name": "hot chocolate",
+            "price": 20,
+            "url": "https://www.foodandwine.com/thmb/V1OEgtLQGUv_w2Fvm40WMLsJ4rk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Indulgent-Hot-Chocolate-FT-RECIPE0223-fd36942ef266417ab40440374fc76a15.jpg",
+            "shop_id": 5
+        },
+        {
+            "id": 24,
+            "name": "caramel apple spice",
+            "price": 35,
+            "url": "https://lilluna.com/wp-content/uploads/2017/08/apple-cider-final-resize-2.jpg",
+            "shop_id": 5
+        },
+        {
+            "id": 25,
+            "name": "mango black tea",
+            "price": 40,
+            "url": "https://recipemarker.com/wp-content/uploads/2020/11/Copycat-Starbucks-Mango-Black-Tea-Lemonade-Recipe.jpg",
+            "shop_id": 5
+        }
+    ],
+    "orders": [
+        {
+            "name": "dasd",
+            "email": "123@dasd.gdfg",
+            "phone": "+380234645453",
+            "address": "dasdasasd",
+            "cart": {
+                "goods": [
+                    {
+                        "id": 1,
+                        "name": "hamburger",
+                        "price": 105,
+                        "url": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_Hamburger:product-header-desktop?wid=830&hei=456&dpr=off",
+                        "shop_id": 1,
+                        "amount": 1
+                    },
+                    {
+                        "id": 2,
+                        "name": "cheeseburger",
+                        "price": 125,
+                        "url": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_Cheeseburger:product-header-desktop?wid=830&hei=458&dpr=off",
+                        "shop_id": 1,
+                        "amount": "5"
+                    }
+                ],
+                "shop_id": 1,
+                "totalCost": 730
+            },
+            "timestamp": "2023-06-03T15:43:52.350Z",
+            "id": 2
+        },
+        {
+            "name": "Name",
+            "email": "123@dasd.gdfg",
+            "phone": "+380501234567",
+            "address": "123",
+            "cart": {
+                "goods": [
+                    {
+                        "id": 16,
+                        "name": "caesar burger",
+                        "price": 395,
+                        "url": "https://myastoriya.com.ua/upload/iblock/8ce/uarl0gdwphdffabptl20duj3jbsnv5v5.jpg",
+                        "shop_id": 4,
+                        "amount": "6"
+                    },
+                    {
+                        "id": 18,
+                        "name": "burger cowboy",
+                        "price": 450,
+                        "url": "https://myastoriya.com.ua/upload/iblock/177/ju1nosal2yf8cnc8kcuuafa88r6wmro7.jpg",
+                        "shop_id": 4,
+                        "amount": "6"
+                    }
+                ],
+                "shop_id": 4,
+                "totalCost": 5070
+            },
+            "timestamp": "2023-06-03T17:54:08.167Z",
+            "id": 3
+        },
+        {
+            "name": "Name",
+            "email": "123@dasd.gdfg",
+            "phone": "+380501234567",
+            "address": "123",
+            "cart": {
+                "goods": [
+                    {
+                        "id": 16,
+                        "name": "caesar burger",
+                        "price": 395,
+                        "url": "https://myastoriya.com.ua/upload/iblock/8ce/uarl0gdwphdffabptl20duj3jbsnv5v5.jpg",
+                        "shop_id": 4,
+                        "amount": "6"
+                    },
+                    {
+                        "id": 18,
+                        "name": "burger cowboy",
+                        "price": 450,
+                        "url": "https://myastoriya.com.ua/upload/iblock/177/ju1nosal2yf8cnc8kcuuafa88r6wmro7.jpg",
+                        "shop_id": 4,
+                        "amount": "6"
+                    }
+                ],
+                "shop_id": 4,
+                "totalCost": 5070
+            },
+            "timestamp": "2023-06-03T17:54:16.687Z",
+            "id": 4
+        },
+        {
+            "name": "Name",
+            "email": "123@dasd.gdfg",
+            "phone": "+380501234567",
+            "address": "123",
+            "cart": {
+                "goods": [
+                    {
+                        "id": 16,
+                        "name": "caesar burger",
+                        "price": 395,
+                        "url": "https://myastoriya.com.ua/upload/iblock/8ce/uarl0gdwphdffabptl20duj3jbsnv5v5.jpg",
+                        "shop_id": 4,
+                        "amount": "6"
+                    },
+                    {
+                        "id": 18,
+                        "name": "burger cowboy",
+                        "price": 450,
+                        "url": "https://myastoriya.com.ua/upload/iblock/177/ju1nosal2yf8cnc8kcuuafa88r6wmro7.jpg",
+                        "shop_id": 4,
+                        "amount": "6"
+                    }
+                ],
+                "shop_id": 4,
+                "totalCost": 5070
+            },
+            "timestamp": "2023-06-03T17:54:48.015Z",
+            "id": 5
+        },
+        {
+            "name": "dadsasda",
+            "email": "123@dasd.gdfg",
+            "phone": "+380234645453",
+            "address": "123",
+            "cart": {
+                "goods": [
+                    {
+                        "id": 1,
+                        "name": "hamburger",
+                        "price": 105,
+                        "url": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_Hamburger:product-header-desktop?wid=830&hei=456&dpr=off",
+                        "shop_id": 1,
+                        "amount": 1
+                    },
+                    {
+                        "id": 2,
+                        "name": "cheeseburger",
+                        "price": 125,
+                        "url": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_Cheeseburger:product-header-desktop?wid=830&hei=458&dpr=off",
+                        "shop_id": 1,
+                        "amount": "5"
+                    }
+                ],
+                "shop_id": 1,
+                "totalCost": 730
+            },
+            "timestamp": "2023-06-03T17:57:05.695Z",
+            "id": 6
+        },
+        {
+            "name": "Name",
+            "email": "123@dasd.gdfg",
+            "phone": "+380234645453",
+            "address": "123",
+            "cart": {
+                "goods": [
+                    {
+                        "id": 1,
+                        "name": "hamburger",
+                        "price": 105,
+                        "url": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_Hamburger:product-header-desktop?wid=830&hei=456&dpr=off",
+                        "shop_id": 1,
+                        "amount": 1
+                    },
+                    {
+                        "id": 2,
+                        "name": "cheeseburger",
+                        "price": 125,
+                        "url": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_Cheeseburger:product-header-desktop?wid=830&hei=458&dpr=off",
+                        "shop_id": 1,
+                        "amount": 1
+                    },
+                    {
+                        "id": 4,
+                        "name": "french fries medium",
+                        "price": 120,
+                        "url": "https://s7d1.scene7.com/is/image/mcdonalds/FFMedium:product-header-desktop?wid=830&hei=458&dpr=off",
+                        "shop_id": 1,
+                        "amount": 1
+                    }
+                ],
+                "shop_id": 1,
+                "totalCost": 350
+            },
+            "timestamp": "2023-06-03T17:58:48.084Z",
+            "id": 7
+        },
+        {
+            "name": "Name",
+            "email": "123@dasd.gdfg",
+            "phone": "+380234645453",
+            "address": "123",
+            "cart": {
+                "goods": [
+                    {
+                        "id": 1,
+                        "name": "hamburger",
+                        "price": 105,
+                        "url": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_Hamburger:product-header-desktop?wid=830&hei=456&dpr=off",
+                        "shop_id": 1,
+                        "amount": 1
+                    },
+                    {
+                        "id": 2,
+                        "name": "cheeseburger",
+                        "price": 125,
+                        "url": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_Cheeseburger:product-header-desktop?wid=830&hei=458&dpr=off",
+                        "shop_id": 1,
+                        "amount": 1
+                    },
+                    {
+                        "id": 4,
+                        "name": "french fries medium",
+                        "price": 120,
+                        "url": "https://s7d1.scene7.com/is/image/mcdonalds/FFMedium:product-header-desktop?wid=830&hei=458&dpr=off",
+                        "shop_id": 1,
+                        "amount": 1
+                    }
+                ],
+                "shop_id": 1,
+                "totalCost": 350
+            },
+            "timestamp": "2023-06-03T17:59:34.865Z",
+            "id": 8
+        },
+        {
+            "name": "Бобовые",
+            "email": "123@dasd.gdfg",
+            "phone": "+380234645453",
+            "address": "123",
+            "cart": {
+                "goods": [
+                    {
+                        "id": 1,
+                        "name": "hamburger",
+                        "price": 105,
+                        "url": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_Hamburger:product-header-desktop?wid=830&hei=456&dpr=off",
+                        "shop_id": 1,
+                        "amount": 1
+                    },
+                    {
+                        "id": 2,
+                        "name": "cheeseburger",
+                        "price": 125,
+                        "url": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_Cheeseburger:product-header-desktop?wid=830&hei=458&dpr=off",
+                        "shop_id": 1,
+                        "amount": 1
+                    },
+                    {
+                        "id": 5,
+                        "name": "chicken roll",
+                        "price": 135,
+                        "url": "https://s7d1.scene7.com/is/image/mcdonalds/chicken_roll:product-header-desktop?wid=829&hei=455&dpr=off",
+                        "shop_id": 1,
+                        "amount": 4
+                    }
+                ],
+                "shop_id": 1,
+                "totalCost": 770
+            },
+            "timestamp": "2023-06-03T18:05:50.149Z",
+            "id": 9
+        },
+        {
+            "name": "Помидор",
+            "email": "123@dasd.gdfg",
+            "phone": "+380234645453",
+            "address": "123",
+            "cart": {
+                "goods": [
+                    {
+                        "id": 1,
+                        "name": "hamburger",
+                        "price": 105,
+                        "url": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_Hamburger:product-header-desktop?wid=830&hei=456&dpr=off",
+                        "shop_id": 1,
+                        "amount": 1
+                    }
+                ],
+                "shop_id": 1,
+                "totalCost": 105
+            },
+            "timestamp": "2023-06-03T18:08:42.077Z",
+            "id": 10
+        },
+        {
+            "name": "fsdffsdfsfs",
+            "email": "123@ffgd.dfsds",
+            "phone": "+380321342452",
+            "address": "hgtrfd",
+            "cart": {
+                "goods": [
+                    {
+                        "id": 1,
+                        "name": "hamburger",
+                        "price": 105,
+                        "url": "https://s7d1.scene7.com/is/image/mcdonalds/Sdwch_Hamburger:product-header-desktop?wid=830&hei=456&dpr=off",
+                        "shop_id": 1,
+                        "amount": 1
+                    }
+                ],
+                "shop_id": 1,
+                "totalCost": 105
+            },
+            "timestamp": "2023-06-03T20:29:30.199Z",
+            "id": 11
+        },
+        {
+            "name": "dsd",
+            "email": "sdf@fsdf.dsf",
+            "phone": "+380234564245",
+            "address": "hgtrfd",
+            "cart": {
+                "goods": [
+                    {
+                        "id": 6,
+                        "name": "i-twister cheese",
+                        "price": 50,
+                        "url": "https://www.kfc-ukraine.com/admin/files/medium/medium_4190.png",
+                        "shop_id": 2,
+                        "amount": 1
+                    }
+                ],
+                "shop_id": 2,
+                "totalCost": 50
+            },
+            "timestamp": "2023-06-03T20:35:34.282Z",
+            "id": 12
+        },
+        {
+            "name": "fsdffsdfsfs",
+            "email": "sdf@fsdf.dsf",
+            "phone": "+380234564245",
+            "address": "hgtrfd",
+            "cart": {
+                "goods": [
+                    {
+                        "id": 15,
+                        "name": "pizza \"frutto de mare\"",
+                        "price": 150,
+                        "url": "https://www.pizzahata.com.ua/wp-content/uploads/2020/08/pitsa-frutto-die-marie.jpeg",
+                        "shop_id": 3,
+                        "amount": 1
+                    }
+                ],
+                "shop_id": 3,
+                "totalCost": 150
+            },
+            "timestamp": "2023-06-03T20:37:23.729Z",
+            "id": 13
+        },
+        {
+            "name": "Картофель",
+            "email": "123@dasd.gdfg",
+            "phone": "+380234645453",
+            "address": "dasdasasd",
+            "cart": {
+                "goods": [
+                    {
+                        "id": 21,
+                        "name": "caffe americano",
+                        "price": 15,
+                        "url": "https://cdn.shopify.com/s/files/1/0022/1393/7252/articles/20230113070552-caffe-americano-blog_1200x1200.webp?v=1673593629",
+                        "shop_id": 5,
+                        "amount": 3
+                    }
+                ],
+                "shop_id": 5,
+                "totalCost": 45
+            },
+            "timestamp": "2023-06-03T20:50:04.714Z",
+            "id": 14
+        }
+    ]
+}
