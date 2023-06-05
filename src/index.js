@@ -20,7 +20,6 @@ const router = createHashRouter([
             {
                 path: "/cart",
                 element: <ShoppingCart />
-                // lazy: () => import("./pages/ShoppingCart")
             },
             {
                 path: "/history",

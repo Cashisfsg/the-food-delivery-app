@@ -29,6 +29,7 @@ export const CartItem: React.FC<CartItemProps> = ({ cartItem }) => {
                 <img
                     src={cartItem?.url}
                     alt={cartItem?.name}
+                    loading="lazy"
                     className="aspect-video w-full object-cover"
                 />
             </div>

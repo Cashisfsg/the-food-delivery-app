@@ -23,6 +23,7 @@ export const GoodsCard: React.FC<GoodsCardProps> = ({
             <img
                 src={good?.url}
                 alt={good?.name}
+                loading="lazy"
                 className="aspect-video w-full rounded-lg object-cover shadow-lg transition-transform delay-300 hover:scale-110"
             />
             <div className="flex w-full items-center justify-between gap-4 text-xl font-semibold capitalize">

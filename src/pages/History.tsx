@@ -3,17 +3,23 @@ import { useLazyFetchOrdersQuery } from "store";
 
 import { SearchOrders, OrderInfo } from "components";
 
+interface SearchFields {
+    email: HTMLInputElement;
+    phone: HTMLInputElement;
+}
+
 export const History: React.FC = () => {
     const [getOrders, { data: orders }] = useLazyFetchOrdersQuery({});
 
-    const onSubmitHandler = (event: React.FormEvent<HTMLFormElement>) => {
+    const onSubmitHandler: React.FormEventHandler<
+        HTMLFormElement & SearchFields
+    > = event => {
         event.preventDefault();
 
-        const formData = new FormData(event.currentTarget);
-        const serializedData = Object.fromEntries(formData.entries());
-        const { email, phone } = serializedData;
+        const formData = event.currentTarget;
+        const { email, phone } = formData;
 
-        getOrders({ email, phone } as { email: string; phone: string });
+        getOrders({ email: email.value, phone: phone.value });
     };
 
     return (

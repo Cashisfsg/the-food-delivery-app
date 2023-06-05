@@ -1,15 +1,21 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useAppDispatch, useStateSelector, confirmOrder } from "store";
 
 import { OrderDetails, Cart } from "containers";
 
+interface OrderDetailsFields {
+    address: HTMLInputElement;
+    email: HTMLInputElement;
+    phone: HTMLInputElement;
+    name: HTMLInputElement;
+}
+
 export const ShoppingCart: React.FC = () => {
     const [captchaToken, setCaptchaToken] = useState<string | null>(null);
 
     const dispatch = useAppDispatch();
-    const navigate = useNavigate();
 
     const isCartEmpty = useStateSelector(
         state => state.order.goods.length === 0
@@ -20,26 +26,27 @@ export const ShoppingCart: React.FC = () => {
         setCaptchaToken(token);
     };
 
-    const handleFormSubmit = async (
-        event: React.FormEvent<HTMLFormElement>
-    ) => {
+    const handleFormSubmit: React.FormEventHandler<
+        HTMLFormElement & OrderDetailsFields
+    > = async event => {
         event.preventDefault();
 
-        const formData = new FormData(event.currentTarget);
-        const serializedData = Object.fromEntries(formData.entries());
-        const { name, email, phone, address } = serializedData;
+        const formData = event.currentTarget;
+        const { name, email, phone, address } = formData;
 
         await dispatch(
-            confirmOrder({ name, email, phone, address } as {
-                name: string;
-                email: string;
-                phone: string;
-                address: string;
+            confirmOrder({
+                name: name.value,
+                email: email.value,
+                phone: phone.value,
+                address: address.value
             })
         );
-
-        navigate("/");
     };
+
+    if (isCartEmpty && captchaToken) {
+        return <Navigate to="/" />;
+    }
 
     return (
         <form
@@ -49,13 +56,15 @@ export const ShoppingCart: React.FC = () => {
             <OrderDetails />
             <Cart />
             <fieldset className="grid place-items-end gap-4 pb-8">
-                <ReCAPTCHA
-                    sitekey={
-                        process.env
-                            .REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY as string
-                    }
-                    onChange={handleCaptchaChange}
-                />
+                {!isCartEmpty && (
+                    <ReCAPTCHA
+                        sitekey={
+                            process.env
+                                .REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY as string
+                        }
+                        onChange={handleCaptchaChange}
+                    />
+                )}
                 <div className="flex w-full items-center justify-between gap-8 text-xl font-medium tracking-wide">
                     <span>Total cost: {totalCost} $</span>
                     <button
