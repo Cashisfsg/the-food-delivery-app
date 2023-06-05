@@ -5,10 +5,10 @@ import "./index.css";
 import { Provider } from "react-redux";
 import { store } from "store";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { Layout, Shop, ShoppingCart, History } from "pages";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
         element: <Layout />,

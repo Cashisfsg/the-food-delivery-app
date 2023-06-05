@@ -4,7 +4,7 @@ import { Order } from "store";
 export const ordersApi = createApi({
     reducerPath: "ordersApi",
     baseQuery: fetchBaseQuery({
-        baseUrl: "http://localhost:3001/"
+        baseUrl: process.env.REACT_APP_API_URL
     }),
     endpoints: builder => ({
         fetchOrders: builder.query<Order[], { email: string; phone: string }>({

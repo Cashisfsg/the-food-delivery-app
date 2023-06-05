@@ -20,7 +20,7 @@ export const History: React.FC = () => {
         <article className="grid h-full grid-rows-[max-content,_auto] gap-8">
             <SearchOrders onSubmitHandler={onSubmitHandler} />
             <section className="h-full w-full overflow-auto rounded-md border-2 px-8 py-4 shadow-md">
-                {orders ? (
+                {orders && orders.length ? (
                     orders.map((order, index) => (
                         <OrderInfo
                             key={order.id}

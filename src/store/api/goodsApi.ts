@@ -4,7 +4,7 @@ import { Good } from "store/types";
 export const goodsApi = createApi({
     reducerPath: "goodsApi",
     baseQuery: fetchBaseQuery({
-        baseUrl: "http://localhost:3001/"
+        baseUrl: process.env.REACT_APP_API_URL
     }),
     endpoints: builder => ({
         fetchGoods: builder.query<Good[], undefined>({

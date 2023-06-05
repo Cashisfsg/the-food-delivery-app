@@ -102,7 +102,7 @@ export const confirmOrder = createAsyncThunk(
             timestamp: new Date()
         };
 
-        const url = "http://localhost:3001/orders";
+        const url = `${process.env.REACT_APP_API_URL}orders`;
 
         const requestOptions = {
             method: "POST",
